@@ -1,35 +1,10 @@
-import './css/style.css';
-import iconSvg1 from './images/1.svg';
-import iconSvg2 from './images/1.svg';
-import iconSvg3 from './images/1.svg';
-import iconSvg4 from './images/1.svg';
+import iconSvg1 from "../../images/1.svg";
+import iconSvg2 from "../../images/2.svg";
+import iconSvg3 from "../../images/3.svg";
+import iconSvg4 from "../../images/4.svg";
 
-function App() {
-  return (
-    <div className="App">
-        <header>
-            <div className="wrapper">
-                <div className="header">
-                    <a href="google.com">
-                        <div className="header-logo"></div>
-                    </a>
-                    <a href="tel:888" className="header-phone">tel:888</a>
-                    <div className="header-phonelink"><a href="tel:7(962)556-1234">+7(962)556-1234</a></div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div className="wrapper">
-                <div className="main">
-                    <h1 className="main-head">Заголовок c уникальным торговым предложение по системе 4U</h1>
-                    <div className="main-small">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру,
-                        верстальщику,
-                        вебмастеру сгенерировать несколько абзацев более.
-                    </div>
-                    <button className="btn main-btn"><span>Подробнее</span></button>
-                </div>
-            </div>
-        </main>
+const Features = () => {
+    return (
         <section className="features">
             <div className="wrapper">
                 <div className="features-wrapper">
@@ -79,40 +54,7 @@ function App() {
                 </div>
             </div>
         </section>
-        <section className="contact">
-            <div className="wrapper">
-                <div className="contact-wrapper">
-                    <h2 className="contact-title">Остались вопросы?</h2>
-                    <div className="contact-description">Оставьте номер телефона, и мы перезвоним вам</div>
-                    <form action="../mailer.smart.php" className="contact-form">
-                        <input type="text" placeholder="Ваше имя" />
-                        <input type="tel" placeholder="Телефон" />
-                        <input type="email" placeholder="E-mail" />
-                            <button className="btn contact-btn">
-                                <span>Позвоните мне</span>
-                            </button>
-                    </form>
-                    <div className="contact-personal">Я даю своё <a href="google.com">согласие</a> на обработку моих персональных
-                        данных.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div className="footer">
-                <div className="footer-logo"></div>
-                <div className="footer-company"><span>© 2020 XXXcompany. Все права защищены.</span></div>
-                <a href="tel:888"
-                   className="footer-phone">tel:888</a>
-                <div className="footer-websurfer">
-                    <span className="footer-websurfer_build">Сделано</span>
-                    <a href="google.com">Ваше имя</a>
-                </div>
-                <div className="footer-phonelink"><a href="tel:888">+7(962)556-1234</a></div>
-            </div>
-        </footer>
-    </div>
-  );
-}
+    );
+};
 
-export default App;
+export default Features;
